@@ -6,16 +6,15 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "seed:products": "node seedProducts.js",
-    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+    "build": "npm install"
   },
   "author": "Mr. Lakshmi Narayana D",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "config": "^3.3.6",
+    "cors": "^2.8.6",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-validation": "^3.0.8",
