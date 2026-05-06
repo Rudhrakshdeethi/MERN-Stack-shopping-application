@@ -41,7 +41,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   };
 
   if (isAuthenticated) {
-    return <Redirect to="/products" />;
+    return <Redirect to="/" />;
   }
 
   return (

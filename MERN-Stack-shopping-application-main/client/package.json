@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "cross-env": "^7.0.3",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -22,13 +23,10 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
-    "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
+    "start": "npx cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "build": "npx cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "test": "npx cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "cross-env": "^10.1.0"
   },
   "eslintConfig": {
     "extends": [

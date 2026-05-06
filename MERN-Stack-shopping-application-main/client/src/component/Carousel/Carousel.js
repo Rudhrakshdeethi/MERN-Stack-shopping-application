@@ -7,10 +7,6 @@ import banner3 from './hd2.jpg';
 import Card from './Card';
 
 const Carousel = ({ isAuthenticated }) => {
-  if (isAuthenticated) {
-    return <Redirect to="/products" />;
-  }
-
   return (
     <Fragment>
       <section className="hero-panel fade-in-up">
